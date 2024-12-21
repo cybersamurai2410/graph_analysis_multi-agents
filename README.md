@@ -1,5 +1,5 @@
 # Graph Analysis using Multi-Agent Collaboration with LLMs 
-Reimplemention of the research paper [GraphTeam: Facilitating Large Language Model-based Graph Analysis via Multi-Agent Collaboration](https://arxiv.org/pdf/2410.18032v2) to develop multi-agent systems optimized for understanding data within graph representations. The research achieved state-of-the-art performance with an average 25.85% improvement over the best baseline in terms of accuracy.  
+Reimplemention of the research paper [GraphTeam: Facilitating Large Language Model-based Graph Analysis via Multi-Agent Collaboration](https://arxiv.org/pdf/2410.18032v2) to develop multi-agent systems optimized for understanding data within graph representations using OpenAI GPT LLM. The research achieved state-of-the-art performance with an average 25.85% improvement over the best baseline in terms of accuracy.  
 
 **Multi-Agent System:**
 1. Input-Output Normalization Module
