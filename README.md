@@ -18,3 +18,22 @@ Reimplemented the research paper [GraphTeam: Facilitating Large Language Model-b
     }
 ]
 ```
+```python
+import networkx as nx
+
+# Define edges
+edges = [(0, 26), (0, 15), (1, 26), (1, 15), (1, 25), (7, 17), (6, 19)]
+
+# Create an undirected graph
+G = nx.Graph()
+G.add_edges_from(edges)
+
+# Check if there is a path between node 7 and node 23
+path_exists = nx.has_path(G, 7, 23)
+
+# Output the result
+print(f'There is a path: {path_exists}')
+```
+```bash
+There is a path: False
+```
