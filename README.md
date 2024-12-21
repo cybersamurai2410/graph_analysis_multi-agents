@@ -1,5 +1,21 @@
 # Graph Analysis using Multi-Agent Collaboration with LLMs 
-Reimplemented the research paper [GraphTeam: Facilitating Large Language Model-based Graph Analysis via Multi-Agent Collaboration](https://arxiv.org/pdf/2410.18032v2) to develop multi-agent systems optimized for understanding data within graph representations. 
+Reimplemention of the research paper [GraphTeam: Facilitating Large Language Model-based Graph Analysis via Multi-Agent Collaboration](https://arxiv.org/pdf/2410.18032v2) to develop multi-agent systems optimized for understanding data within graph representations. The research achieved state-of-the-art performance with an average 25.85% improvement over the best baseline in terms of accuracy.  
+
+**Multi-Agent System:**
+1. Input-Output Normalization Module
+    - Question Agent - Extracts and refines four key arguments (e.g., graph type and output format) from the original question to facilitate problem understanding.
+    - Answer Agent - Organizes the results to meet the output requirements.
+3. External Knowledge Retrieval Module
+    - Search Agent - Retrieves the most relevant entries from the knowledge base for each question. The knowledge base consists of relevant documentation and experience information.
+5. Problem-Solving Module
+    - Coding Agent - Uses established algorithms via programming to generate solutions given the retrieved information from the Search Agent.
+    - Reasoning Agent - Directly computes the results without programming if the Coding Agent fails.
+  
+## Architecture
+<img width="605" alt="image" src="https://github.com/user-attachments/assets/fc01928c-1566-4738-9b0f-237a5d422dd6" />
+
+## Benchmarks 
+<img width="603" alt="image" src="https://github.com/user-attachments/assets/a6fc982b-dda8-425f-a986-3193622be0f4" />
 
 ## Example Output
 ```json
